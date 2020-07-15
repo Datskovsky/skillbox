@@ -2,21 +2,73 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>Webpack App Template</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Стоимость обучения</title>
     <link rel="stylesheet" href="dist/css/style.css">
 </head>
 <body>
 
-    <div class="block">
-        <h1>Webpack App Template</h1>
-
-        <p>This image was copied with optimization</p>
-        <div class="icon">
-            <img src="dist/static/icon.png" alt="test icon" style="width: 100%;">
+    <div class="container">
+        <h1>Стоимость обучения</h1>
+        <div class="container__content">
+            <div class="content__left-column">
+                <div id="left-column__rectangle">
+                    <div class="rectangle__info">
+                        <p>cкидка</p>
+                        <p>40%</p>
+                        <p>первым 20</p>
+                    </div>
+                </div>
+                <div class="left-column__wrapper-price">
+                    <div class="wrapper-price__price1">
+                        <p>Полная стоимость курса</p>
+                        <p>50 000 <span>₽</span></p>
+                        <div class="dash"></div>
+                    </div>
+                    <div class="wrapper-price__price2">
+                        <p>2 900₽</p>
+                        <p>Рассрочка без первого взноса</p>
+                    </div>
+                    <div class="wrapper-price__price3">
+                        <p>29 000 ₽</p>
+                        <p>Для первых 2-ти</p>
+                    </div>
+                </div>
+            </div>
+            <div class="content__right-column">
+                <div class="right-column__content">
+                    <h2>Записывайся на курс</h2>
+                    <div class="right-column__info">
+                        <p>Старт курса: <span>7 сентября</span></p>
+                        <p>Осталось: <span>19 мест</span></p>
+                    </div>
+                    <form class="form" id="form" action="">
+                        <div class="form-control">
+                            <input type="text" id="username" placeholder="Имя">
+                            <small>error message</small>
+                        </div>
+                        <div class="form-control">
+                            <input type="tel" id="tel" placeholder="Телефон">
+                            <small>error message</small>
+                        </div>
+                        <div class="form-control">
+                            <input type="email" id="email" placeholder="Email">
+                            <small>error message</small>
+                        </div>
+                        <button class="submit" id="submit">записаться</button>
+                        <div class="form-control">
+                            <input type="checkbox" class="custom-checkbox" id="checkbox">
+                            <label for="checkbox">
+                                <div class="checkbox__text">
+                                    Я согласен с условиями обработки <span>персональных данных</span>
+                                </div>
+                                <small>error message</small>
+                            </label>
+                        </div>
+                    </form>
+                </div>
+            </div>
         </div>
-
-        <p>And this SVG icon was convert into data:base64</p>
-        <div class="icon icon-svg"></div>
     </div>
 
     <script src="dist/js/app.js"></script>

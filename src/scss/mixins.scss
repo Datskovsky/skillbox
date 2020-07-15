@@ -1,0 +1,10 @@
+@mixin regular-text{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+}
+@mixin bold-text{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+}
